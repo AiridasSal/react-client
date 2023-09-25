@@ -1,0 +1,52 @@
+/* Variables */
+:root {
+    --color-primary: #9AA61F;
+    --color-secondary: #BAD4EC;
+    --color-background: #FFFFFF;
+    --color-danger: #d60d38;
+    --color-text: #7A7A7A;
+    --color-text-light: #FFFFFF;
+    --font-family: 'Montserrat', sans-serif;
+    --font-size-body: 1rem;
+    --font-size-header: 2.25rem;
+    --font-weight-light: 300;
+    --font-weight-regular: 400;
+    --font-weight-bold: 700;
+    --spacing-input: 0.25rem;
+    --spacing-small: 0.75rem;
+    --spacing-medium: 1.5rem;
+    --spacing-large: 3rem;
+    --border-radius: 0.25rem;
+  }
+  
+  /* Reset default browser styles */
+  * {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  /* Global font styles */
+  body {
+    font-family: var(--font-family);
+    font-size: var(--font-size-body);
+    line-height: 1.5;
+    color: var(--color-text);
+  }
+  
+  /* Global container styles */
+  .container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 var(--spacing-medium);
+  }
+  
+  @media screen and (max-width: 767px) {
+    .container {
+      padding:  var(--spacing-small);
+    }
+  }
+  
+
+  

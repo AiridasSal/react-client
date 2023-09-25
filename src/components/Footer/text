@@ -1,0 +1,20 @@
+  <label>
+    <input
+      type="checkbox"
+      name="isUserSender"
+      checked={values.isUserSender}
+      onChange={handleIsUserSenderChange}
+    />
+    The orderer is the sender
+  </label>
+</div>
+<div className="mb-4">
+  <label>
+    <input
+      type="checkbox"
+      name="isUserReceiver"
+      checked={values.isUserReceiver}
+      onChange={handleIsUserReceiverChange}
+    />
+    The orderer is the receiver
+  </label>

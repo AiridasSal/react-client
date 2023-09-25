@@ -1,0 +1,425 @@
+.Login, .Register {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  background-color: #7da8cf;
+}
+.Login .banner, .Register .banner {
+  max-width: 300px;
+}
+.Login h2, .Register h2 {
+  color: #ffffff;
+  margin-bottom: 1.5rem;
+}
+.Login .login, .Register .login {
+  background-color: #ffffff;
+  border-radius: 4px;
+  padding: 2rem;
+  width: 400px;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1), 0 1px 3px rgba(0, 0, 0, 0.08);
+}
+.Login .login div, .Register .login div {
+  margin-bottom: 1rem;
+}
+.Login .login div label, .Register .login div label {
+  display: block;
+  margin-bottom: 0.5rem;
+  color: #7da8cf;
+}
+.Login .login div input, .Register .login div input {
+  width: 100%;
+  padding: 0.5rem;
+  border: 1px solid #7da8cf;
+  border-radius: 4px;
+  font-size: 1rem;
+}
+.Login .login div input:focus, .Register .login div input:focus {
+  outline: none;
+  border-color: #9AA61F;
+}
+.Login .login button, .Register .login button {
+  background-color: #9AA61F;
+  color: #ffffff;
+  border: none;
+  border-radius: 4px;
+  font-size: 1rem;
+  padding: 0.5rem;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+.Login .login button:hover, .Register .login button:hover {
+  color: var(--color-primary);
+  background-color: var(--color-text-light);
+  outline: 2px solid var(--color-primary);
+}
+.Login p, .Register p {
+  color: #7A7A7A;
+}
+.Login h2, .Register h2 {
+  color: #9AA61F;
+}
+.Login a, .Register a {
+  color: #9AA61F;
+  text-decoration: none;
+}
+.Login a:hover, .Register a:hover {
+  text-decoration: underline;
+}
+
+.header {
+  background-color: #7da8cf;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  padding: 0 2rem;
+  box-shadow: 0 1px 3px rgba(0, 0, 0, 0.1), 0 1px 2px rgba(0, 0, 0, 0.06);
+}
+.header .logo {
+  color: #ffffff;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+.header .nav {
+  margin-left: auto;
+}
+.header .nav ul {
+  display: flex;
+  list-style: none;
+  padding: 0;
+}
+.header .nav ul li a.nav-link {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 1rem;
+  transition: color 0.3s ease;
+  font-weight: 500;
+}
+.header .nav ul li a.nav-link:hover {
+  color: #9AA61F;
+}
+@media (max-width: 480px) {
+  .header {
+    flex-direction: column;
+    height: auto;
+    padding: 1rem;
+  }
+  .header .nav {
+    margin-left: 0;
+  }
+  .header .nav ul {
+    flex-direction: column;
+    gap: 1rem;
+    align-items: center;
+  }
+}
+
+.footer {
+  background-color: #7da8cf;
+  height: 80px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  box-shadow: 0 -1px 3px rgba(0, 0, 0, 0.1), 0 -1px 2px rgba(0, 0, 0, 0.06);
+}
+.footer p {
+  color: #7A7A7A;
+  margin: 0;
+}
+.footer ul {
+  list-style: none;
+  display: flex;
+  padding: 0;
+  margin-top: 0.5rem;
+}
+.footer ul li a {
+  color: #ffffff;
+  text-decoration: none;
+  padding: 0 1rem;
+  transition: color 0.3s ease;
+}
+.footer ul li a:hover {
+  color: #9AA61F;
+}
+
+button {
+  cursor: pointer;
+  padding: var(--spacing-small) var(--spacing-medium);
+  border: none;
+  border-radius: var(--border-radius);
+  font-size: 1rem;
+  font-weight: var(--font-weight-bold);
+  background-color: var(--color-primary);
+  color: #ffffff;
+  transition: background-color 0.3s ease;
+}
+button :hover {
+  background-color: #005ea8;
+}
+
+.orderSpecs {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+}
+.orderSpecs h2 {
+  text-align: left;
+  width: 100%;
+}
+
+.sender, .receiver {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  column-gap: 1rem;
+  justify-content: flex-start;
+}
+.sender h2, .receiver h2 {
+  text-align: left;
+  width: 100%;
+}
+
+.informationForTheInvoice, .payForGoods {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  column-gap: 1rem;
+}
+.informationForTheInvoice .toggleVisibility, .payForGoods .toggleVisibility {
+  grid-column: 1/-1;
+  position: relative;
+  justify-self: left;
+}
+.informationForTheInvoice h2, .payForGoods h2 {
+  text-align: left;
+  width: 100%;
+}
+
+.orderSummaryContainer {
+  padding: var(--spacing-input);
+  margin: auto;
+  font-weight: 600;
+  font-style: italic;
+  text-decoration: underline;
+}
+.orderSummaryContainer span {
+  margin: 0.5rem;
+}
+
+.wrapper {
+  display: flex;
+  justify-content: center;
+  margin: 0 auto;
+}
+
+.delivery-form {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: min-content;
+  width: 100%;
+  max-width: 800px;
+  margin-bottom: var(--spacing-medium);
+  /* Responsive */
+}
+.delivery-form h2 {
+  grid-column: 1/-1;
+  text-align: left;
+  margin: var(--spacing-medium) 0;
+}
+.delivery-form form {
+  grid-template-columns: repeat(3, 1fr);
+  align-self: center;
+  grid-gap: 1rem;
+  width: 100%;
+}
+.delivery-form form input,
+.delivery-form form textarea,
+.delivery-form form select {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+.delivery-form form button {
+  padding: 0.5rem;
+  font-size: 1rem;
+  cursor: pointer;
+}
+.delivery-form form button:hover {
+  color: var(--color-primary);
+  background-color: var(--color-text-light);
+  outline: 2px solid var(--color-primary);
+}
+.delivery-form form .dangerButton {
+  flex-basis: 30%;
+  margin: var(--spacing-input) 0;
+}
+.delivery-form form .dangerButton:hover {
+  color: var(--color-danger);
+  background-color: var(--color-text-light);
+  outline: 2px solid var(--color-danger);
+}
+.delivery-form form .parcelWeight {
+  flex-basis: 70%;
+}
+.delivery-form form .successButton {
+  flex-basis: 100%;
+  margin-top: 1rem;
+}
+.delivery-form form .parcelWeightContainer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+.delivery-form form .parcel-input {
+  display: flex;
+  align-items: center;
+}
+.delivery-form form .parcel-input button {
+  margin-left: 0.5rem;
+}
+.delivery-form .AgreementContainer {
+  margin: var(--spacing-medium) 0;
+}
+.delivery-form .AgreementContainer label {
+  display: flex;
+  margin-top: 0;
+}
+.delivery-form .AgreementContainer label input {
+  width: 1rem;
+  margin-right: var(--spacing-input);
+}
+.delivery-form input, .delivery-form select {
+  border: none;
+  border-radius: 5px;
+  box-shadow: 0px 0px 2px rgba(0, 0, 0, 0.2);
+  background-color: #f5f5f5;
+  color: #333;
+  outline: var(--color-secondary);
+}
+.delivery-form input:focus, .delivery-form select:focus {
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.4);
+}
+.delivery-form label {
+  display: block;
+  margin: 0.5rem 0;
+}
+@media (max-width: 768px) {
+  .delivery-form form {
+    grid-template-columns: repeat(2, 1fr);
+  }
+  .delivery-form form form button[type=submit] {
+    grid-column: 1/-1;
+    justify-self: center;
+  }
+}
+@media (max-width: 480px) {
+  .delivery-form .delivery-form {
+    margin: 0;
+  }
+  .delivery-form label {
+    margin-left: 0.5rem;
+  }
+  .delivery-form .orderSpecs, .delivery-form .sender, .delivery-form .receiver, .delivery-form .informationForTheInvoice, .delivery-form .payForGoods {
+    grid-template-columns: 1fr;
+  }
+}
+
+.error {
+  color: var(--color-danger);
+  font-size: 0.75rem;
+  margin: 0.5rem 0;
+  text-align: left;
+  width: 100%;
+}
+
+.orders-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-family: Arial, sans-serif;
+}
+.orders-table__button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 5px 10px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 14px;
+  cursor: pointer;
+  border-radius: 4px;
+  transition: background-color 0.3s;
+}
+.orders-table__button:hover {
+  background-color: #45a049;
+}
+
+.table th,
+.table td {
+  padding: 10px;
+  text-align: left;
+  border-bottom: 1px solid #ddd;
+}
+.table th {
+  background-color: #f2f2f2;
+  font-weight: bold;
+}
+.table tr:nth-child(even) {
+  background-color: #f8f8f8;
+}
+.table tr:hover {
+  background-color: #e0e0e0;
+}
+
+.table-responsive {
+  overflow-x: auto;
+  -webkit-overflow-scrolling: touch;
+}
+
+.order-details {
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 2rem;
+}
+.order-details__title {
+  text-align: center;
+  margin-bottom: 2rem;
+}
+.order-details__subtitle {
+  margin-top: 1.5rem;
+  margin-bottom: 1rem;
+}
+.order-details__backButton {
+  margin-bottom: 1rem;
+  background-color: #4a90e2;
+  color: white;
+  padding: 0.5rem 1rem;
+  border: none;
+  cursor: pointer;
+  transition: background-color 0.3s;
+}
+.order-details__backButton:hover {
+  background-color: #3b7ac9;
+}
+.order-details__column {
+  display: inline-block;
+  width: 50%;
+  vertical-align: top;
+  padding: 1rem;
+}
+.order-details__column:first-child {
+  border-right: 1px solid #ccc;
+}
+@media (max-width: 767px) {
+  .order-details__column {
+    display: block;
+    width: 100%;
+    padding: 1rem 0;
+  }
+  .order-details__column:first-child {
+    border-right: none;
+    border-bottom: 1px solid #ccc;
+  }
+}/*# sourceMappingURL=Styles.css.map */
